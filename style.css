@@ -1,3 +1,12 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 div {
     display: flex;
     justify-content: flex-start;
@@ -8,14 +17,53 @@ section {
     border: 2px solid black;
     height: 12rem;
     width: 12rem;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 15%;
+    padding: 1rem;
 }
 
-.Dice1{
-    
+.side1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.side2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side2 article:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+.side3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side3 article:nth-of-type(2) {
+    align-self: center;
+}
+
+.side3 article:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+.side4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side4 article:nth-of-type(2) {
+    align-self: flex-end;
+}
+
 
 article {
-    
+    border: 2px solid black;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: black;
 }
